@@ -1,0 +1,30 @@
+#!/usr/bin/perl
+use strict;
+
+my $NOT_SKIP_HEADER = 0;
+my $SKIP_HEADER     = 1;
+
+sub catARFF {
+    my ($ARFFFileName, $skipHeader) = @_;
+    open(F, $ARFFFileName) || die $!;
+    if ($skipHeader == $SKIP_HEADER) {
+	while(my $line = <F>) {
+	    if ($line =~ /^\@data/) {
+		last;
+	    }
+	}
+    }
+    while(my $line = <F>) {
+	print $line;
+    }
+    close(F);
+}
+
+for(my $i=0; $i<@ARGV; $i++) {
+    if ($i == 0) {
+	&catARFF($ARGV[$i], $NOT_SKIP_HEADER);
+    } else {
+	&catARFF($ARGV[$i], $SKIP_HEADER);
+    }
+}
+    
