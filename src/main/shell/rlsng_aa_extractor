@@ -1,0 +1,7 @@
+#!/bin/sh
+home=$(cd $(dirname $0);pwd)
+cp=${home}/../libs/asciiart-extractor.jar
+main=jp.ac.shibaura_it.se.tslab.aaextractor.predicate.rlsng.RLSNgASCIIArtExtractor
+
+java -cp ${cp} ${main} $*
+
