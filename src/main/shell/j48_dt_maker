@@ -1,0 +1,14 @@
+#!/bin/sh
+home=$(cd $(dirname $0);pwd)
+cp=${home}/../libs/asciiart-extractor.jar
+main=weka.classifiers.trees.J48
+
+if [ $# -ne 2 ]; then
+  echo "j48_dt_maker arff model" 1>&2
+  exit 1
+fi
+
+java -cp ${cp} ${main} -t $1 -d $2.model > $2.txt 2>&1
+
+
+

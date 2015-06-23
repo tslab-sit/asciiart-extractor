@@ -1,0 +1,405 @@
+
+J48 pruned tree
+------------------
+
+dcr_by_rle <= 1.661871
+|   text_size <= 10
+|   |   dcr_by_rle <= 1.366667: asciiart (164.0/24.0)
+|   |   dcr_by_rle > 1.366667
+|   |   |   text_size <= 8
+|   |   |   |   text_size <= 4: asciiart (9.0)
+|   |   |   |   text_size > 4: non_asciiart (144.0/49.0)
+|   |   |   text_size > 8: asciiart (93.0/35.0)
+|   text_size > 10
+|   |   dcr_by_rle <= 1.028902: asciiart (55567.0/154.0)
+|   |   dcr_by_rle > 1.028902
+|   |   |   dcr_by_rle <= 1.614865
+|   |   |   |   dcr_by_rle <= 1.391089
+|   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   text_size <= 167: asciiart (4840.0/60.0)
+|   |   |   |   |   |   text_size > 167
+|   |   |   |   |   |   |   number_of_lines <= 1: non_asciiart (7.0)
+|   |   |   |   |   |   |   number_of_lines > 1
+|   |   |   |   |   |   |   |   text_size <= 170
+|   |   |   |   |   |   |   |   |   text_size <= 169: asciiart (8.0)
+|   |   |   |   |   |   |   |   |   text_size > 169
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.088235: asciiart (4.0)
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.088235: non_asciiart (5.0)
+|   |   |   |   |   |   |   |   text_size > 170: asciiart (80.0/2.0)
+|   |   |   |   |   number_of_lines > 2: asciiart (7536.0/147.0)
+|   |   |   |   dcr_by_rle > 1.391089
+|   |   |   |   |   dcr_by_rle <= 1.391304
+|   |   |   |   |   |   text_size <= 34: non_asciiart (26.0/5.0)
+|   |   |   |   |   |   text_size > 34: asciiart (13.0)
+|   |   |   |   |   dcr_by_rle > 1.391304
+|   |   |   |   |   |   text_size <= 40: asciiart (986.0/18.0)
+|   |   |   |   |   |   text_size > 40
+|   |   |   |   |   |   |   dcr_by_rle <= 1.416185: asciiart (361.0/4.0)
+|   |   |   |   |   |   |   dcr_by_rle > 1.416185
+|   |   |   |   |   |   |   |   dcr_by_rle <= 1.423077
+|   |   |   |   |   |   |   |   |   text_size <= 113
+|   |   |   |   |   |   |   |   |   |   text_size <= 105: asciiart (46.0/9.0)
+|   |   |   |   |   |   |   |   |   |   text_size > 105: non_asciiart (7.0/1.0)
+|   |   |   |   |   |   |   |   |   text_size > 113: asciiart (23.0)
+|   |   |   |   |   |   |   |   dcr_by_rle > 1.423077
+|   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.578261
+|   |   |   |   |   |   |   |   |   |   text_size <= 43
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.475728: asciiart (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.475728
+|   |   |   |   |   |   |   |   |   |   |   |   |   text_size <= 41: asciiart (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   text_size > 41: non_asciiart (16.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines > 1: asciiart (62.0/3.0)
+|   |   |   |   |   |   |   |   |   |   text_size > 43
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 1: asciiart (147.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines > 1
+|   |   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   text_size <= 67
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.430108
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   text_size <= 56: non_asciiart (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   text_size > 56: asciiart (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.430108: asciiart (97.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   text_size > 67
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.471698
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   text_size <= 71: non_asciiart (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   text_size > 71: asciiart (51.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.471698: asciiart (94.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   number_of_lines > 2: asciiart (966.0/27.0)
+|   |   |   |   |   |   |   |   |   dcr_by_rle > 1.578261
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.578947
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 2: asciiart (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   number_of_lines > 2: non_asciiart (10.0)
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines > 3: asciiart (5.0)
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.578947
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 2: asciiart (69.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines > 2
+|   |   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   text_size <= 133
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   text_size <= 76
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.596774: asciiart (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.596774
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.601695: non_asciiart (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.601695: asciiart (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   text_size > 76: non_asciiart (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   text_size > 133: asciiart (16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   number_of_lines > 3: asciiart (108.0/5.0)
+|   |   |   dcr_by_rle > 1.614865
+|   |   |   |   number_of_lines <= 1
+|   |   |   |   |   text_size <= 52
+|   |   |   |   |   |   text_size <= 27
+|   |   |   |   |   |   |   text_size <= 19
+|   |   |   |   |   |   |   |   dcr_by_rle <= 1.630435: non_asciiart (40.0/13.0)
+|   |   |   |   |   |   |   |   dcr_by_rle > 1.630435: asciiart (41.0/14.0)
+|   |   |   |   |   |   |   text_size > 19: asciiart (16.0/1.0)
+|   |   |   |   |   |   text_size > 27
+|   |   |   |   |   |   |   text_size <= 33: non_asciiart (23.0)
+|   |   |   |   |   |   |   text_size > 33
+|   |   |   |   |   |   |   |   text_size <= 38: asciiart (4.0)
+|   |   |   |   |   |   |   |   text_size > 38
+|   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.645161: asciiart (2.0)
+|   |   |   |   |   |   |   |   |   dcr_by_rle > 1.645161: non_asciiart (9.0/1.0)
+|   |   |   |   |   text_size > 52: asciiart (23.0/1.0)
+|   |   |   |   number_of_lines > 1
+|   |   |   |   |   text_size <= 225
+|   |   |   |   |   |   text_size <= 79
+|   |   |   |   |   |   |   dcr_by_rle <= 1.617021
+|   |   |   |   |   |   |   |   number_of_lines <= 2: non_asciiart (7.0)
+|   |   |   |   |   |   |   |   number_of_lines > 2: asciiart (10.0/3.0)
+|   |   |   |   |   |   |   dcr_by_rle > 1.617021: asciiart (148.0/7.0)
+|   |   |   |   |   |   text_size > 79
+|   |   |   |   |   |   |   text_size <= 93
+|   |   |   |   |   |   |   |   dcr_by_rle <= 1.635135: non_asciiart (16.0/2.0)
+|   |   |   |   |   |   |   |   dcr_by_rle > 1.635135: asciiart (3.0)
+|   |   |   |   |   |   |   text_size > 93
+|   |   |   |   |   |   |   |   text_size <= 121: asciiart (24.0)
+|   |   |   |   |   |   |   |   text_size > 121
+|   |   |   |   |   |   |   |   |   number_of_lines <= 3
+|   |   |   |   |   |   |   |   |   |   text_size <= 131: non_asciiart (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   text_size > 131: asciiart (25.0)
+|   |   |   |   |   |   |   |   |   number_of_lines > 3
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.653061: non_asciiart (15.0)
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.653061: asciiart (3.0/1.0)
+|   |   |   |   |   text_size > 225: asciiart (40.0)
+dcr_by_rle > 1.661871
+|   dcr_by_rle <= 1.8
+|   |   text_size <= 8: non_asciiart (366.0/69.0)
+|   |   text_size > 8
+|   |   |   dcr_by_rle <= 1.698113
+|   |   |   |   text_size <= 65
+|   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   number_of_lines <= 1
+|   |   |   |   |   |   |   dcr_by_rle <= 1.68254
+|   |   |   |   |   |   |   |   text_size <= 21: asciiart (31.0/7.0)
+|   |   |   |   |   |   |   |   text_size > 21
+|   |   |   |   |   |   |   |   |   text_size <= 56: non_asciiart (29.0/6.0)
+|   |   |   |   |   |   |   |   |   text_size > 56: asciiart (2.0)
+|   |   |   |   |   |   |   dcr_by_rle > 1.68254: asciiart (57.0/1.0)
+|   |   |   |   |   |   number_of_lines > 1
+|   |   |   |   |   |   |   text_size <= 21
+|   |   |   |   |   |   |   |   text_size <= 15: asciiart (7.0)
+|   |   |   |   |   |   |   |   text_size > 15: non_asciiart (27.0/6.0)
+|   |   |   |   |   |   |   text_size > 21
+|   |   |   |   |   |   |   |   text_size <= 50: asciiart (24.0)
+|   |   |   |   |   |   |   |   text_size > 50: non_asciiart (3.0)
+|   |   |   |   |   number_of_lines > 2: asciiart (60.0/4.0)
+|   |   |   |   text_size > 65
+|   |   |   |   |   text_size <= 76
+|   |   |   |   |   |   number_of_lines <= 3: non_asciiart (47.0/7.0)
+|   |   |   |   |   |   number_of_lines > 3: asciiart (3.0)
+|   |   |   |   |   text_size > 76
+|   |   |   |   |   |   text_size <= 88: asciiart (10.0)
+|   |   |   |   |   |   text_size > 88
+|   |   |   |   |   |   |   text_size <= 206
+|   |   |   |   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.673684: non_asciiart (4.0/1.0)
+|   |   |   |   |   |   |   |   |   dcr_by_rle > 1.673684: asciiart (12.0)
+|   |   |   |   |   |   |   |   number_of_lines > 2
+|   |   |   |   |   |   |   |   |   text_size <= 197
+|   |   |   |   |   |   |   |   |   |   text_size <= 166
+|   |   |   |   |   |   |   |   |   |   |   text_size <= 144
+|   |   |   |   |   |   |   |   |   |   |   |   text_size <= 130
+|   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.666667: asciiart (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.666667: non_asciiart (18.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   text_size > 130: asciiart (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   text_size > 144: non_asciiart (9.0)
+|   |   |   |   |   |   |   |   |   |   text_size > 166: asciiart (8.0/1.0)
+|   |   |   |   |   |   |   |   |   text_size > 197: non_asciiart (8.0)
+|   |   |   |   |   |   |   text_size > 206: asciiart (10.0)
+|   |   |   dcr_by_rle > 1.698113
+|   |   |   |   text_size <= 260
+|   |   |   |   |   text_size <= 38
+|   |   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   |   text_size <= 12
+|   |   |   |   |   |   |   |   number_of_lines <= 1: asciiart (54.0/10.0)
+|   |   |   |   |   |   |   |   number_of_lines > 1
+|   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.788462: asciiart (6.0/1.0)
+|   |   |   |   |   |   |   |   |   dcr_by_rle > 1.788462: non_asciiart (15.0/5.0)
+|   |   |   |   |   |   |   text_size > 12
+|   |   |   |   |   |   |   |   number_of_lines <= 1
+|   |   |   |   |   |   |   |   |   text_size <= 27
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.773438: non_asciiart (129.0/33.0)
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.773438
+|   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.783133: asciiart (20.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.783133: non_asciiart (32.0/7.0)
+|   |   |   |   |   |   |   |   |   text_size > 27
+|   |   |   |   |   |   |   |   |   |   text_size <= 34: non_asciiart (119.0/6.0)
+|   |   |   |   |   |   |   |   |   |   text_size > 34
+|   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.78: asciiart (8.0)
+|   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.78: non_asciiart (7.0)
+|   |   |   |   |   |   |   |   number_of_lines > 1
+|   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.774194
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.731343
+|   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.70098: non_asciiart (16.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.70098: asciiart (62.0/21.0)
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.731343: non_asciiart (85.0/12.0)
+|   |   |   |   |   |   |   |   |   dcr_by_rle > 1.774194
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.795918: asciiart (50.0/11.0)
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.795918: non_asciiart (17.0/1.0)
+|   |   |   |   |   |   number_of_lines > 2
+|   |   |   |   |   |   |   number_of_lines <= 4
+|   |   |   |   |   |   |   |   dcr_by_rle <= 1.773438
+|   |   |   |   |   |   |   |   |   number_of_lines <= 3: asciiart (50.0/5.0)
+|   |   |   |   |   |   |   |   |   number_of_lines > 3
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.766667: asciiart (26.0)
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.766667: non_asciiart (3.0)
+|   |   |   |   |   |   |   |   dcr_by_rle > 1.773438
+|   |   |   |   |   |   |   |   |   text_size <= 27: non_asciiart (7.0)
+|   |   |   |   |   |   |   |   |   text_size > 27
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.78125: non_asciiart (4.0)
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.78125: asciiart (14.0/2.0)
+|   |   |   |   |   |   |   number_of_lines > 4: asciiart (14.0)
+|   |   |   |   |   text_size > 38
+|   |   |   |   |   |   dcr_by_rle <= 1.734266
+|   |   |   |   |   |   |   number_of_lines <= 1
+|   |   |   |   |   |   |   |   dcr_by_rle <= 1.705263: asciiart (8.0/1.0)
+|   |   |   |   |   |   |   |   dcr_by_rle > 1.705263: non_asciiart (29.0/4.0)
+|   |   |   |   |   |   |   number_of_lines > 1
+|   |   |   |   |   |   |   |   text_size <= 57: asciiart (29.0/6.0)
+|   |   |   |   |   |   |   |   text_size > 57
+|   |   |   |   |   |   |   |   |   text_size <= 80
+|   |   |   |   |   |   |   |   |   |   number_of_lines <= 3: non_asciiart (28.0/1.0)
+|   |   |   |   |   |   |   |   |   |   number_of_lines > 3
+|   |   |   |   |   |   |   |   |   |   |   text_size <= 72: asciiart (4.0)
+|   |   |   |   |   |   |   |   |   |   |   text_size > 72: non_asciiart (3.0)
+|   |   |   |   |   |   |   |   |   text_size > 80
+|   |   |   |   |   |   |   |   |   |   number_of_lines <= 3
+|   |   |   |   |   |   |   |   |   |   |   text_size <= 130
+|   |   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 2: asciiart (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   number_of_lines > 2: non_asciiart (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   text_size > 130: asciiart (18.0)
+|   |   |   |   |   |   |   |   |   |   number_of_lines > 3
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   text_size <= 156: non_asciiart (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   text_size > 156
+|   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.702875: non_asciiart (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.702875: asciiart (9.0)
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines > 4
+|   |   |   |   |   |   |   |   |   |   |   |   text_size <= 98: asciiart (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   text_size > 98: non_asciiart (18.0/2.0)
+|   |   |   |   |   |   dcr_by_rle > 1.734266
+|   |   |   |   |   |   |   number_of_lines <= 4
+|   |   |   |   |   |   |   |   text_size <= 137
+|   |   |   |   |   |   |   |   |   text_size <= 74
+|   |   |   |   |   |   |   |   |   |   text_size <= 68
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.761905: non_asciiart (62.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.761905
+|   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.763636: asciiart (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.763636: non_asciiart (132.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines > 2
+|   |   |   |   |   |   |   |   |   |   |   |   text_size <= 42: non_asciiart (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   text_size > 42
+|   |   |   |   |   |   |   |   |   |   |   |   |   text_size <= 47: asciiart (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   text_size > 47: non_asciiart (31.0/10.0)
+|   |   |   |   |   |   |   |   |   |   text_size > 68
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.775862: non_asciiart (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.775862: asciiart (16.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines > 2
+|   |   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 3: non_asciiart (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   number_of_lines > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.747748: asciiart (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.747748: non_asciiart (5.0)
+|   |   |   |   |   |   |   |   |   text_size > 74: non_asciiart (126.0/6.0)
+|   |   |   |   |   |   |   |   text_size > 137
+|   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.793103
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.752577
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 2: asciiart (2.0)
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines > 2
+|   |   |   |   |   |   |   |   |   |   |   |   text_size <= 200: non_asciiart (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   text_size > 200: asciiart (2.0)
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.752577: asciiart (9.0)
+|   |   |   |   |   |   |   |   |   dcr_by_rle > 1.793103: non_asciiart (11.0)
+|   |   |   |   |   |   |   number_of_lines > 4
+|   |   |   |   |   |   |   |   text_size <= 106
+|   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.767123
+|   |   |   |   |   |   |   |   |   |   number_of_lines <= 5
+|   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.743119: asciiart (6.0)
+|   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.743119
+|   |   |   |   |   |   |   |   |   |   |   |   text_size <= 81: asciiart (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   text_size > 81: non_asciiart (4.0)
+|   |   |   |   |   |   |   |   |   |   number_of_lines > 5: asciiart (9.0)
+|   |   |   |   |   |   |   |   |   dcr_by_rle > 1.767123
+|   |   |   |   |   |   |   |   |   |   number_of_lines <= 5: non_asciiart (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   number_of_lines > 5
+|   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.787234: non_asciiart (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.787234: asciiart (2.0)
+|   |   |   |   |   |   |   |   text_size > 106: non_asciiart (60.0/11.0)
+|   |   |   |   text_size > 260
+|   |   |   |   |   number_of_lines <= 5: asciiart (23.0)
+|   |   |   |   |   number_of_lines > 5
+|   |   |   |   |   |   text_size <= 349: non_asciiart (5.0/1.0)
+|   |   |   |   |   |   text_size > 349: asciiart (9.0)
+|   dcr_by_rle > 1.8
+|   |   text_size <= 37
+|   |   |   text_size <= 11
+|   |   |   |   number_of_lines <= 1
+|   |   |   |   |   dcr_by_rle <= 1.909091: asciiart (27.0/2.0)
+|   |   |   |   |   dcr_by_rle > 1.909091
+|   |   |   |   |   |   text_size <= 2: non_asciiart (754.0/154.0)
+|   |   |   |   |   |   text_size > 2
+|   |   |   |   |   |   |   text_size <= 5: asciiart (140.0/46.0)
+|   |   |   |   |   |   |   text_size > 5: non_asciiart (514.0/96.0)
+|   |   |   |   number_of_lines > 1
+|   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   text_size <= 4: asciiart (86.0/30.0)
+|   |   |   |   |   |   text_size > 4: non_asciiart (151.0/49.0)
+|   |   |   |   |   number_of_lines > 2: asciiart (69.0/19.0)
+|   |   |   text_size > 11
+|   |   |   |   number_of_lines <= 3
+|   |   |   |   |   dcr_by_rle <= 1.910891
+|   |   |   |   |   |   text_size <= 24
+|   |   |   |   |   |   |   dcr_by_rle <= 1.85124
+|   |   |   |   |   |   |   |   number_of_lines <= 1
+|   |   |   |   |   |   |   |   |   text_size <= 23
+|   |   |   |   |   |   |   |   |   |   text_size <= 22: non_asciiart (75.0/24.0)
+|   |   |   |   |   |   |   |   |   |   text_size > 22: asciiart (6.0)
+|   |   |   |   |   |   |   |   |   text_size > 23: non_asciiart (20.0/1.0)
+|   |   |   |   |   |   |   |   number_of_lines > 1
+|   |   |   |   |   |   |   |   |   text_size <= 12: asciiart (12.0)
+|   |   |   |   |   |   |   |   |   text_size > 12
+|   |   |   |   |   |   |   |   |   |   number_of_lines <= 2: non_asciiart (58.0/24.0)
+|   |   |   |   |   |   |   |   |   |   number_of_lines > 2: asciiart (8.0/1.0)
+|   |   |   |   |   |   |   dcr_by_rle > 1.85124
+|   |   |   |   |   |   |   |   dcr_by_rle <= 1.861702
+|   |   |   |   |   |   |   |   |   number_of_lines <= 2: non_asciiart (51.0/1.0)
+|   |   |   |   |   |   |   |   |   number_of_lines > 2: asciiart (3.0)
+|   |   |   |   |   |   |   |   dcr_by_rle > 1.861702: non_asciiart (337.0/89.0)
+|   |   |   |   |   |   text_size > 24
+|   |   |   |   |   |   |   dcr_by_rle <= 1.887179: non_asciiart (518.0/46.0)
+|   |   |   |   |   |   |   dcr_by_rle > 1.887179
+|   |   |   |   |   |   |   |   number_of_lines <= 1: asciiart (33.0/10.0)
+|   |   |   |   |   |   |   |   number_of_lines > 1: non_asciiart (22.0)
+|   |   |   |   |   dcr_by_rle > 1.910891: non_asciiart (4653.0/266.0)
+|   |   |   |   number_of_lines > 3
+|   |   |   |   |   text_size <= 34
+|   |   |   |   |   |   text_size <= 19: asciiart (29.0/9.0)
+|   |   |   |   |   |   text_size > 19
+|   |   |   |   |   |   |   dcr_by_rle <= 1.970588
+|   |   |   |   |   |   |   |   dcr_by_rle <= 1.929688
+|   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.825726: non_asciiart (5.0)
+|   |   |   |   |   |   |   |   |   dcr_by_rle > 1.825726
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.908571
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.863415: asciiart (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.863415
+|   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.876712: non_asciiart (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.876712: asciiart (4.0)
+|   |   |   |   |   |   |   |   |   |   |   number_of_lines > 4
+|   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.860465: non_asciiart (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.860465: asciiart (2.0)
+|   |   |   |   |   |   |   |   |   |   dcr_by_rle > 1.908571: non_asciiart (14.0/3.0)
+|   |   |   |   |   |   |   |   dcr_by_rle > 1.929688: asciiart (15.0)
+|   |   |   |   |   |   |   dcr_by_rle > 1.970588: non_asciiart (57.0/13.0)
+|   |   |   |   |   text_size > 34
+|   |   |   |   |   |   dcr_by_rle <= 1.890323: asciiart (3.0/1.0)
+|   |   |   |   |   |   dcr_by_rle > 1.890323: non_asciiart (34.0/1.0)
+|   |   text_size > 37: non_asciiart (21489.0/398.0)
+
+Number of Leaves  : 	178
+
+Size of the tree : 	355
+
+
+Time taken to build model: 2.03 seconds
+Time taken to test model on training data: 0.23 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances      101339               97.8979 %
+Incorrectly Classified Instances      2176                2.1021 %
+Kappa statistic                          0.9492
+Mean absolute error                      0.0365
+Root mean squared error                  0.1351
+Relative absolute error                  8.8895 %
+Root relative squared error             29.8153 %
+Total Number of Instances           103515     
+
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 72159  1455 |     a = asciiart
+   721 29180 |     b = non_asciiart
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances      101096               97.6631 %
+Incorrectly Classified Instances      2419                2.3369 %
+Kappa statistic                          0.9435
+Mean absolute error                      0.0386
+Root mean squared error                  0.142 
+Relative absolute error                  9.4003 %
+Root relative squared error             31.3252 %
+Total Number of Instances           103515     
+
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 72068  1546 |     a = asciiart
+   873 29028 |     b = non_asciiart
+

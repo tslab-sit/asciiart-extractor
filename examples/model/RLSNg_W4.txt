@@ -1,0 +1,127 @@
+
+J48 pruned tree
+------------------
+
+number_of_ngrams <= 0
+|   dcr_by_rle <= 1.113636
+|   |   dcr_by_rle <= 0.780105
+|   |   |   text_size <= 87: asciiart (1007.0/28.0)
+|   |   |   text_size > 87
+|   |   |   |   dcr_by_rle <= 0.481865
+|   |   |   |   |   dcr_by_rle <= 0.198895
+|   |   |   |   |   |   text_size <= 112
+|   |   |   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   |   |   dcr_by_rle <= 0.152542: non_asciiart (4.0/1.0)
+|   |   |   |   |   |   |   |   dcr_by_rle > 0.152542: asciiart (4.0)
+|   |   |   |   |   |   |   number_of_lines > 2: non_asciiart (5.0)
+|   |   |   |   |   |   text_size > 112: asciiart (9.0)
+|   |   |   |   |   dcr_by_rle > 0.198895: asciiart (232.0)
+|   |   |   |   dcr_by_rle > 0.481865
+|   |   |   |   |   text_size <= 142
+|   |   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   |   text_size <= 114
+|   |   |   |   |   |   |   |   dcr_by_rle <= 0.708609: non_asciiart (7.0)
+|   |   |   |   |   |   |   |   dcr_by_rle > 0.708609: asciiart (4.0/1.0)
+|   |   |   |   |   |   |   text_size > 114: asciiart (4.0)
+|   |   |   |   |   |   number_of_lines > 2: asciiart (40.0/4.0)
+|   |   |   |   |   text_size > 142: non_asciiart (12.0/1.0)
+|   |   dcr_by_rle > 0.780105
+|   |   |   text_size <= 35: asciiart (110.0/2.0)
+|   |   |   text_size > 35
+|   |   |   |   text_size <= 65
+|   |   |   |   |   dcr_by_rle <= 1.053333
+|   |   |   |   |   |   number_of_lines <= 2: asciiart (27.0/5.0)
+|   |   |   |   |   |   number_of_lines > 2: non_asciiart (2.0)
+|   |   |   |   |   dcr_by_rle > 1.053333: non_asciiart (11.0/1.0)
+|   |   |   |   text_size > 65: non_asciiart (68.0/8.0)
+|   dcr_by_rle > 1.113636
+|   |   text_size <= 10
+|   |   |   number_of_lines <= 1
+|   |   |   |   text_size <= 2: non_asciiart (754.0/154.0)
+|   |   |   |   text_size > 2
+|   |   |   |   |   text_size <= 4: asciiart (57.0/23.0)
+|   |   |   |   |   text_size > 4: non_asciiart (620.0/61.0)
+|   |   |   number_of_lines > 1
+|   |   |   |   text_size <= 6
+|   |   |   |   |   number_of_lines <= 2
+|   |   |   |   |   |   text_size <= 4: asciiart (86.0/30.0)
+|   |   |   |   |   |   text_size > 4
+|   |   |   |   |   |   |   dcr_by_rle <= 1.833333: asciiart (2.0)
+|   |   |   |   |   |   |   dcr_by_rle > 1.833333: non_asciiart (12.0/2.0)
+|   |   |   |   |   number_of_lines > 2: asciiart (34.0/7.0)
+|   |   |   |   text_size > 6
+|   |   |   |   |   number_of_lines <= 3: non_asciiart (83.0/24.0)
+|   |   |   |   |   number_of_lines > 3: asciiart (17.0/5.0)
+|   |   text_size > 10
+|   |   |   dcr_by_rle <= 1.619048
+|   |   |   |   text_size <= 17: asciiart (19.0/4.0)
+|   |   |   |   text_size > 17
+|   |   |   |   |   number_of_lines <= 3
+|   |   |   |   |   |   text_size <= 120
+|   |   |   |   |   |   |   text_size <= 46
+|   |   |   |   |   |   |   |   number_of_lines <= 1
+|   |   |   |   |   |   |   |   |   text_size <= 28
+|   |   |   |   |   |   |   |   |   |   text_size <= 26: non_asciiart (22.0/2.0)
+|   |   |   |   |   |   |   |   |   |   text_size > 26: asciiart (5.0)
+|   |   |   |   |   |   |   |   |   text_size > 28: non_asciiart (29.0)
+|   |   |   |   |   |   |   |   number_of_lines > 1
+|   |   |   |   |   |   |   |   |   dcr_by_rle <= 1.38961
+|   |   |   |   |   |   |   |   |   |   text_size <= 31: non_asciiart (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   text_size > 31: asciiart (7.0)
+|   |   |   |   |   |   |   |   |   dcr_by_rle > 1.38961
+|   |   |   |   |   |   |   |   |   |   text_size <= 24: asciiart (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   text_size > 24: non_asciiart (12.0)
+|   |   |   |   |   |   |   text_size > 46: non_asciiart (73.0/1.0)
+|   |   |   |   |   |   text_size > 120
+|   |   |   |   |   |   |   dcr_by_rle <= 1.288372: non_asciiart (8.0)
+|   |   |   |   |   |   |   dcr_by_rle > 1.288372: asciiart (9.0/1.0)
+|   |   |   |   |   number_of_lines > 3: non_asciiart (31.0)
+|   |   |   dcr_by_rle > 1.619048: non_asciiart (16026.0/60.0)
+number_of_ngrams > 0: asciiart (45003.0)
+
+Number of Leaves  : 	39
+
+Size of the tree : 	77
+
+
+Time taken to build model: 0.42 seconds
+Time taken to test model on training data: 0.16 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       64035               99.3376 %
+Incorrectly Classified Instances       427                0.6624 %
+Kappa statistic                          0.9834
+Mean absolute error                      0.011 
+Root mean squared error                  0.0741
+Relative absolute error                  2.7681 %
+Root relative squared error             16.6378 %
+Total Number of Instances            64462     
+
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 46568   316 |     a = asciiart
+   111 17467 |     b = non_asciiart
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances       63991               99.2693 %
+Incorrectly Classified Instances       471                0.7307 %
+Kappa statistic                          0.9816
+Mean absolute error                      0.0116
+Root mean squared error                  0.078 
+Relative absolute error                  2.9175 %
+Root relative squared error             17.513  %
+Total Number of Instances            64462     
+
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 46541   343 |     a = asciiart
+   128 17450 |     b = non_asciiart
+

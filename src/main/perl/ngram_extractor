@@ -1,0 +1,39 @@
+#!/usr/bin/perl
+use strict;
+use utf8;
+use Encode qw/encode decode/;
+
+if (@ARGV < 2) {
+    printf STDERR "ngram_extractor n file1 ... filen\n";
+    exit 1;
+}
+
+my $n = shift @ARGV;
+
+my %count=();
+foreach my $file (@ARGV) {
+    open(F, $file) || die "Fatal:$!";
+    while(my $line = <F>){
+	$line = decode('UTF-8', $line);
+	$line =~ s/[\r\n]$//g;
+	$line =~ s/　/  /g; # one wide space to two narrow spaces
+	my $ngrams = &splitToNgram($line, $n);
+
+	foreach my $ngram (@{$ngrams}){
+	    $count{$ngram} = 1;
+	}
+    }
+    close(F);
+}
+foreach my $ngram (keys(%count)) {
+    print encode('UTF-8', $ngram), "\n";
+}
+
+sub splitToNgram {
+    my ($text, $N) = @_;
+    my $ngram=[];
+    for(my $i=0; $i<=length($text)-$N;$i++){
+	push(@{$ngram}, substr($text, $i, $N));
+    }
+    return $ngram;
+}

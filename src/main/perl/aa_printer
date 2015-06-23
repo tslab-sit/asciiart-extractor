@@ -1,0 +1,27 @@
+#!/usr/bin/perl
+use strict;
+
+if (@ARGV != 1) {
+    printf STDERR "aa_printer file\n";
+    exit 1;
+}
+
+my $file=$ARGV[0];
+open(F, $file) || die "Fatal:$!";
+my @contents = <F>;
+close(F);
+
+my $results = <STDIN>;
+my @results = split(/,/, $results);
+for(my $n = shift @results; $n>0; $n--){
+    my $s = shift @results;
+    my $e = shift @results;
+    printf "%d,%d\n", $s, $e;
+    printf "-----------------------------------\n", $s, $e;
+    for(my $i=$s; $i<=$e; $i++) {
+	print $contents[$i];
+    }
+    printf "-----------------------------------\n", $s, $e;
+}
+
+
