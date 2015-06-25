@@ -23,7 +23,8 @@ The following ASCII art is quoted from https://en.wikipedia.org/wiki/ASCII_art.
  `>>x<<´       *   (pprinz@example.com)   *
  /  O  \       ****************************
 
-The following ASCII art is quoted from http://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B9%E3%82%AD%E3%83%BC%E3%82%A2%E3%83%BC%E3%83%88
+The following sentences are quoted from http://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B9%E3%82%AD%E3%83%BC%E3%82%A2%E3%83%BC%E3%83%88
+
 「ASCII art」とは本来、英語コミュニティにおいて
 「ASCII文字コード（図形文字領域0x20-0x7e）に含まれる
 文字・記号を用いた表現」のことを指した。日本語の入力環境では
@@ -39,7 +40,8 @@ The following ASCII art is quoted from http://ja.wikipedia.org/wiki/%E3%83%A2%E3
 　│ │ │
 　（＿_）___）
 
-The following ASCII art is quoted from http://nl.wikipedia.org/wiki/ASCII-art.
+The following sentences are quoted from http://nl.wikipedia.org/wiki/ASCII-art.
+
 ASCII-art is een kunstvorm waarbij afbeeldingen worden
 samengesteld uit enkel ASCII-tekens. Vooral in niet-grafische
 omgevingen, zoals bepaalde computerterminals, e-mail,
