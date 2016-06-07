@@ -1,0 +1,72 @@
+#!/usr/bin/perl
+use strict;
+use utf8;
+use Encode qw/encode decode/;
+
+if (@ARGV < 3) {
+    printf STDERR "kskip_ngram_extractor k n file1 ... filem\n";
+    exit 1;
+}
+
+my $k = shift @ARGV;
+my $n = shift @ARGV;
+
+my %count=();
+foreach my $file (@ARGV) {
+    open(F, $file) || die "Fatal:$!";
+    while(my $line = <F>){
+	$line = decode('UTF-8', $line);
+	$line =~ s/[\r\n]$//g;
+	$line =~ s/　/  /g; # one wide space to two narrow spaces
+	my $ngrams = &splitToKskipNgrams($line, $k, $n);
+
+	foreach my $ngram (@{$ngrams}){
+	    $count{$ngram} = 1;
+	}
+    }
+    close(F);
+}
+foreach my $ngram (sort(keys(%count))) {
+    print encode('UTF-8', $ngram), "\n";
+}
+
+sub min {
+    my ($a, $b) = @_;
+    return ($a<$b) ? $a : $b;
+}
+
+sub splitToKskipNgrams {
+    my ($text, $K, $N, $canSkipHead) = (@_, 1);
+    my $L = length($text);
+    if ($N == 0) { return [] };
+
+    if ($L < $N) { return [] };
+
+    if ($K == 0) {
+	my $ngram=[];
+	for(my $i=0; $i<=$L-$N;$i++){
+	    push(@{$ngram}, substr($text, $i, $N));
+	}
+	return $ngram;
+    }
+
+    my $ngram=[];
+    my $head = substr($text, 0, 1);
+    if ($N==1) {
+	push(@{$ngram}, $head);
+    } else {
+	for(my $i=1; $i<=&min($L-$N+1, $K+1); $i++){
+	    my $tailNgrams = &splitToKskipNgrams(substr($text, $i, $L-$i), $K, $N-1, 0);
+	    foreach my $tail (@{$tailNgrams}) {
+		push(@{$ngram}, $head.$tail);
+	    }
+	}
+    }
+    if ($canSkipHead) {
+	my $tailNgrams = &splitToKskipNgrams(substr($text, 1, $L-1), $K, $N, 1);
+	foreach my $tail (@{$tailNgrams}) {
+	    push(@{$ngram}, $tail);
+	}
+    }
+    return $ngram;
+}
