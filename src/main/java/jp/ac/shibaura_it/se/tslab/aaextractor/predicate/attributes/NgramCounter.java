@@ -10,19 +10,9 @@ import java.util.stream.Collectors;
 
 public class NgramCounter {
 	Pattern pattern;
-	// http://qiita.com/sifue/items/039846cf8415efdc5c92
-	private static String convertToUnicode(String original)
-	{
-	    StringBuilder sb = new StringBuilder();
-	    for (int i = 0; i < original.length(); i++) {
-	        sb.append(String.format("\\u%04X", Character.codePointAt(original, i)));
-	    }
-	    return sb.toString();
-	}
 
 	private void init(List<String> keywords) {
-		List<String> unicodeKeywords = keywords.stream().map(k->convertToUnicode(k)).collect(Collectors.toList());
-		String rex = String.join("|", unicodeKeywords);
+		String rex = keywords.stream().map(k->Pattern.quote(k)).collect(Collectors.joining("|"));
 		this.pattern = Pattern.compile(rex);
 	}
 
