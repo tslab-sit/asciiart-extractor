@@ -4,7 +4,7 @@ use utf8;
 use Encode qw/encode decode/;
 
 if (@ARGV < 3) {
-    printf STDERR "kskip-ngram-extractor k n file1 ... filen\n";
+    printf STDERR "kskip_ngram_extractor k n file1 ... filem\n";
     exit 1;
 }
 
