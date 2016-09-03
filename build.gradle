@@ -24,7 +24,7 @@ repositories {
 dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
  	compile group: 'nz.ac.waikato.cms.weka', name: 'weka-stable', version: '3.6.12'
-	compile group: 'com.facebook.thirdparty', name: 'libsvm', version: '3.18.1'
+	compile files('libsvm/java/libsvm.jar')
 
     // The production code uses the SLF4J logging API at compile time
     compile 'org.slf4j:slf4j-api:1.7.12'
