@@ -2,7 +2,7 @@ package jp.ac.shibaura_it.se.tslab.aaextractor.predicate.rls;
 
 import jp.ac.shibaura_it.se.tslab.aaextractor.Window;
 import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.Recognizer;
-import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.SVMIdenticalScaler;
+import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.SVMIdentityScaler;
 import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.SVMScaler;
 import libsvm.svm;
 import libsvm.svm_model;
@@ -16,7 +16,7 @@ public class RLSSVM implements Recognizer {
 	public RLSSVM(svm_model model) {
 		this.model = model;
 		this.attrFactory = new RLSAttributesFactory();
-		this.scaler = new SVMIdenticalScaler();
+		this.scaler = new SVMIdentityScaler();
 	}
 
 	public RLSSVM(svm_model model, SVMScaler scaler) {

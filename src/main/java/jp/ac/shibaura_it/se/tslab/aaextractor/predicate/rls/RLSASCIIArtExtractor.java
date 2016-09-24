@@ -8,7 +8,7 @@ import java.util.List;
 import jp.ac.shibaura_it.se.tslab.aaextractor.Window;
 import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.PredicateBasedASCIIArtExtractor;
 import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.Recognizer;
-import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.SVMIdenticalScaler;
+import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.SVMIdentityScaler;
 import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.SVMScaleFile;
 import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.SVMScaler;
 import libsvm.svm;
@@ -25,7 +25,7 @@ public class RLSASCIIArtExtractor {
 	 * @param args command line arguments
 	 */
 	public static void main(String[] args) {
-		SVMScaler scaler = new SVMIdenticalScaler();
+		SVMScaler scaler = new SVMIdentityScaler();
 		int argIndex=0;
 		if (args.length == 6) {
 			if (!args[argIndex++].equals("-s")) {
