@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import jp.ac.shibaura_it.se.tslab.aaextractor.Window;
 import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.ARFFAttributes;
+import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.SVMAttributes;
 import jp.ac.shibaura_it.se.tslab.aaextractor.predicate.TextReader;
 
 public class RLSAttributesExtractor {
@@ -35,9 +36,20 @@ public class RLSAttributesExtractor {
 		}
 
 		String cls = args[argIndex++];
-		if (cls.equals(ARFFAttributes.ASCIIART_CLASS_NAME) != true &&
-			cls.equals(ARFFAttributes.NON_ASCIIART_CLASS_NAME) != true) {
-			System.err.println("<class> must be either " + ARFFAttributes.ASCIIART_CLASS_NAME + " or " + ARFFAttributes.NON_ASCIIART_CLASS_NAME + ".");
+		if (dataSetPrinter instanceof RLSARFFDataSetPrinter) {
+			if (cls.equals(ARFFAttributes.ASCIIART_CLASS_NAME) != true &&
+				cls.equals(ARFFAttributes.NON_ASCIIART_CLASS_NAME) != true) {
+				System.err.println("<class> must be either " + ARFFAttributes.ASCIIART_CLASS_NAME + " or " + ARFFAttributes.NON_ASCIIART_CLASS_NAME + ".");
+				System.exit(1);
+			}
+		} else if(dataSetPrinter instanceof RLSSVMDataSetPrinter) {
+			if (cls.equals(SVMAttributes.ASCIIART_CLASS_NAME) != true &&
+				cls.equals(SVMAttributes.NON_ASCIIART_CLASS_NAME) != true) {
+				System.err.println("<class> must be either " + SVMAttributes.ASCIIART_CLASS_NAME + " or " + SVMAttributes.NON_ASCIIART_CLASS_NAME + ".");
+				System.exit(1);
+			}
+		} else {
+			System.err.println("Internal error: an invalid DataSetPrinter is specified");
 			System.exit(1);
 		}
 
